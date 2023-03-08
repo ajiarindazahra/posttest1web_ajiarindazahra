@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawoo Cat Caffe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pemesanan.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="beranda.html"><img src="LOGO.png" width="8%"></a>
+        <p>Nawo Cat Cafe</p>
+    </header>
+
+    <nav style="text-align: right;">
+
+        <a href="tentangkami.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="akun.html">Akun</a>
+        <a href="pemesanan.html" style="color: rgb(255, 255, 255);" >Pemesanan</a>
+
+    </nav>
+
+    <main>
+        <h1>Reservasi Tempat</h1>
+        <form action="proses-reservasi.php" method="post">
+
+            <!-- nama -->
+            <label for="nama">Nama Lengkap:</label><br>
+            <input type="text" id="nama" name="nama"><br>
+
+            <!-- email -->
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <!-- telepon -->
+            <label for="telepon">Nomor Telepon:</label><br>
+            <input type="tel" id="telepon" name="telepon"><br>
+
+            <!-- tanggal -->
+            <label for="tanggal">Tanggal:</label><br>
+            <input type="date" id="tanggal" name="tanggal"><br>
+
+            <!-- waktu -->
+            <label for="waktu">Waktu:</label><br>
+            <input type="time" id="waktu" name="waktu"><br>
+
+            <!-- jumlah tamu -->
+            <label for="jumlah-tamu">Jumlah Tamu:</label><br>
+            <input type="number" id="jumlah-tamu" name="jumlah-tamu" min="1" max="10"><br>
+
+            <label for="Ruangan">Ruangan:</label>
+            <select id="Ruangan" name="Ruangan">
+                <option value="room1">Room 1</option>
+                <option value="room2">Room 2</option>
+                <option value="room3">Room 3</option>
+                <option value="room4">Room 4</option>
+            </select>
+
+
+            <!-- keterangan -->
+            <label for="keterangan">Keterangan:</label><br>
+            <textarea id="keterangan" name="keterangan" rows="5" cols="30"></textarea><br>
+
+            
+            <input type="submit" value="Reservasi">
+    </main>
+    
+    <footer>
+        <p>
+           2023 Copyright ANCF
+        </p>
+        <P>
+            Support by TUPRAK
+        </P>
+    </footer>
+</body>
+</html>

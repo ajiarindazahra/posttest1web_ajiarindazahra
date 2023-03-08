@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawoo Cat Caffe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="akun.css">
+</head>
+
+<body>
+
+    <header>
+        <a href="beranda.html"><img src="LOGO.png" width="8%"></a>
+        <p>Nawo Cat Cafe</p>
+    </header>
+
+
+    <nav style="text-align: right;">
+
+        <a href="tentangkami.html">Tentang Kami</a>
+        <a href="menu.html">Menu</a>
+        <a href="akun.html" style="color: rgb(255, 255, 255);">Akun</a>
+        <a href="pemesanan.html">Pemesanan</a>
+
+    </nav>
+
+    <main>
+
+    <h1>Buat Akun Baru</h1>
+
+    <form action="proses-pembuatan-akun.php" method="post">
+
+    <!-- Nama -->
+      <label for="nama">Nama Lengkap:</label><br>
+      <input type="text" id="nama" name="nama"><br>
+    
+    <!-- Jenis kelamin -->
+      <label for="jeniskelamin">Jenis kelamin :</label><BR />
+      <div class="jenkel">
+        <INPUT type="radio" name="lelaki"><label>Laki-laki</label><BR />
+        <INPUT type="radio" name="perempuan"><label>Perempuan</label><BR />
+      </div>
+    
+    <!-- checkbox -->
+    <label for="statuspekerjaan">Status Pekerjaan :</label><BR />
+    <div class="statuspekerjaan">
+        <input type="checkbox"/> Mahasiswa 
+        <input type="checkbox"/> Pekerja
+        <input type="checkbox"/> Tidak Bekerja
+        <br>
+    </div>
+
+    <!-- email -->
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br>
+    
+    <!-- gambar -->
+    <label for="Foto Diri">Foto Diri:</label><br>
+    <input type="file">
+    <br>
+    
+    <!-- password -->
+      <label for="password">Password:</label><br>
+      <input type="password" id="password" name="password"><br>
+    
+    <!-- konfirmasi-password -->
+      <label for="konfirmasi-password">Konfirmasi Password:</label><br>
+      <input type="password" id="konfirmasi-password" name="konfirmasi-password"><br>
+    
+    <!-- submit -->
+    <input type="submit" value="Buat Akun">
+    <button type="reset">reset</button>
+    </form>
+
+
+    </main>
+
+    <footer>
+        <p>
+           2023 Copyright ANCF
+        </p>
+        <P>
+            Support by TUPRAK
+        </P>
+    </footer>
+</body>
+</html>
